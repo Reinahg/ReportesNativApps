@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3i5-ag-Mwe">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Report View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="createReport" id="Y6W-OH-hqX" customClass="CreateReportViewController" customModule="ReportesNativApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear nuevo reporte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGB-Co-sOx">
+                                <rect key="frame" x="20.000000000000014" y="120.99999999999999" width="244.33333333333337" height="29.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T7P-md-fU9">
+                                <rect key="frame" x="20" y="170.33333333333334" width="273" height="333.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ph-3e-YOw">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="24.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sff-Zv-6VN">
+                                        <rect key="frame" x="0.0" y="34.333333333333314" width="273" height="34"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0u-uN-zFg">
+                                        <rect key="frame" x="0.0" y="78.333333333333314" width="115.66666666666667" height="24.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAG-Vg-rCq" customClass="RoundView" customModule="ReportesNativApps" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="112.66666666666666" width="273" height="142"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0rr-rK-F9z">
+                                                <rect key="frame" x="1" y="1" width="271" height="140"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="ajC-rT-yqW"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <constraints>
+                                            <constraint firstItem="0rr-rK-F9z" firstAttribute="top" secondItem="xAG-Vg-rCq" secondAttribute="top" constant="1" id="1cU-cT-mXE"/>
+                                            <constraint firstAttribute="trailing" secondItem="0rr-rK-F9z" secondAttribute="trailing" constant="1" id="Yf6-ZK-PFU"/>
+                                            <constraint firstItem="0rr-rK-F9z" firstAttribute="leading" secondItem="xAG-Vg-rCq" secondAttribute="leading" constant="1" id="v7b-rW-nfy"/>
+                                            <constraint firstAttribute="bottom" secondItem="0rr-rK-F9z" secondAttribute="bottom" constant="1" id="vtK-gG-mfc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XN-l3-Llh">
+                                        <rect key="frame" x="0.0" y="264.66666666666663" width="77" height="24.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHT-Hn-Jz6">
+                                        <rect key="frame" x="0.0" y="299" width="132" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Tomar imagen"/>
+                                    </button>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GMg-pr-6Fl">
+                                        <rect key="frame" x="0.0" y="333.33333333333337" width="160" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="s1u-zC-hrF"/>
+                                            <constraint firstAttribute="width" constant="160" id="yEo-Ud-Mmd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xAG-Vg-rCq" firstAttribute="width" secondItem="T7P-md-fU9" secondAttribute="width" id="c8O-5h-AmF"/>
+                                    <constraint firstItem="sff-Zv-6VN" firstAttribute="width" secondItem="T7P-md-fU9" secondAttribute="width" id="czi-gN-m5i"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xto-Mp-GHv">
+                                <rect key="frame" x="59" y="755.66666666666663" width="272" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svb-Hh-UCu">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Cancelar"/>
+                                        <connections>
+                                            <action selector="actionDismiss:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Zcd-bE-gEj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhU-gc-NaF">
+                                        <rect key="frame" x="146" y="0.0" width="126" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Crear reporte"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Xto-Mp-GHv" secondAttribute="bottom" constant="20" id="7lX-tg-xuF"/>
+                            <constraint firstItem="dGB-Co-sOx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="GFR-jn-btS"/>
+                            <constraint firstItem="Xto-Mp-GHv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Pvv-C8-NsD"/>
+                            <constraint firstItem="T7P-md-fU9" firstAttribute="top" secondItem="dGB-Co-sOx" secondAttribute="bottom" constant="20" id="ZXN-59-AVv"/>
+                            <constraint firstItem="T7P-md-fU9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="o13-RL-Bms"/>
+                            <constraint firstItem="dGB-Co-sOx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="r3F-NO-ezP"/>
+                            <constraint firstItem="T7P-md-fU9" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.7" id="upE-q1-fRj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FmE-0Q-wfP"/>
+                    <connections>
+                        <outlet property="btnCreate" destination="UhU-gc-NaF" id="72z-Tb-qwu"/>
+                        <outlet property="btnCreateReport" destination="UhU-gc-NaF" id="lzk-SA-awq"/>
+                        <outlet property="btnTakeImage" destination="oHT-Hn-Jz6" id="OFS-cX-ATs"/>
+                        <outlet property="imageReport" destination="GMg-pr-6Fl" id="9eI-CV-S4D"/>
+                        <outlet property="tfDescription" destination="0rr-rK-F9z" id="vcF-mS-U5q"/>
+                        <outlet property="tfTitle" destination="sff-Zv-6VN" id="NU4-nq-Pd8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7692307692307" y="-28.436018957345969"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NEf-Wu-DeD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3i5-ag-Mwe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FM9-JA-7PC">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="oJD-7C-JdS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lX-xt-hZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.53846153846153" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

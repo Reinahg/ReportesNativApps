@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="ReportViewCell" customModule="ReportesNativApps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7J-Lm-coP" customClass="RoundView" customModule="ReportesNativApps" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="300" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZg-VF-CEN" customClass="RoundView" customModule="ReportesNativApps" customModuleProvider="target">
+                                <rect key="frame" x="5" y="35" width="80" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xpA-lJ-eog">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="HHj-7F-wqG"/>
+                                            <constraint firstAttribute="height" constant="80" id="uL4-TR-YOO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="FKe-tJ-DxI"/>
+                                    <constraint firstItem="xpA-lJ-eog" firstAttribute="leading" secondItem="yZg-VF-CEN" secondAttribute="leading" id="aGC-WV-lsH"/>
+                                    <constraint firstAttribute="height" constant="80" id="c6h-dQ-0h0"/>
+                                    <constraint firstAttribute="bottom" secondItem="xpA-lJ-eog" secondAttribute="bottom" id="kT0-Th-yVP"/>
+                                    <constraint firstAttribute="trailing" secondItem="xpA-lJ-eog" secondAttribute="trailing" id="m78-2R-pKX"/>
+                                    <constraint firstItem="xpA-lJ-eog" firstAttribute="top" secondItem="yZg-VF-CEN" secondAttribute="top" id="xc4-Rp-Uvm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YVH-aF-jeo">
+                                <rect key="frame" x="93" y="19.999999999999996" width="197" height="40.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre reporte" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mat-xc-9QT">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdp-SB-rsl">
+                                        <rect key="frame" x="0.0" y="20.333333333333336" width="197" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="yZg-VF-CEN" firstAttribute="leading" secondItem="h7J-Lm-coP" secondAttribute="leading" constant="5" id="GKC-m8-XHg"/>
+                            <constraint firstAttribute="width" constant="300" id="QK5-P3-5A2"/>
+                            <constraint firstItem="YVH-aF-jeo" firstAttribute="leading" secondItem="yZg-VF-CEN" secondAttribute="trailing" constant="8" symbolic="YES" id="l67-XV-MwV"/>
+                            <constraint firstAttribute="trailing" secondItem="YVH-aF-jeo" secondAttribute="trailing" constant="10" id="m0w-HD-HKi"/>
+                            <constraint firstItem="yZg-VF-CEN" firstAttribute="centerY" secondItem="h7J-Lm-coP" secondAttribute="centerY" id="rIC-VY-O7S"/>
+                            <constraint firstItem="YVH-aF-jeo" firstAttribute="top" secondItem="h7J-Lm-coP" secondAttribute="top" constant="20" id="w0B-d5-cG4"/>
+                            <constraint firstAttribute="height" constant="150" id="ziN-n0-BJn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="h7J-Lm-coP" secondAttribute="bottom" constant="5" id="7IS-xO-nej"/>
+                <constraint firstItem="h7J-Lm-coP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="8Ig-uT-iX6"/>
+                <constraint firstItem="h7J-Lm-coP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="TDZ-12-2HV"/>
+                <constraint firstAttribute="trailing" secondItem="h7J-Lm-coP" secondAttribute="trailing" constant="5" id="YNh-EC-mNM"/>
+                <constraint firstItem="h7J-Lm-coP" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="fa3-fY-agU"/>
+                <constraint firstItem="h7J-Lm-coP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="rPb-ez-JB2"/>
+            </constraints>
+            <size key="customSize" width="305" height="166"/>
+            <connections>
+                <outlet property="imgReport" destination="xpA-lJ-eog" id="qZg-St-m9r"/>
+                <outlet property="lblDescription" destination="Jdp-SB-rsl" id="UXm-py-ZD8"/>
+                <outlet property="lblTitleReport" destination="Mat-xc-9QT" id="I8g-1W-JpZ"/>
+            </connections>
+            <point key="canvasLocation" x="325.38461538461536" y="-9.9526066350710902"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

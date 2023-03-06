@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		912B73D329B64E1A0007AB60 /* ReportsViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912B73D229B64E1A0007AB60 /* ReportsViewModelDelegate.swift */; };
+		912B73D629B64EBA0007AB60 /* ReportUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912B73D529B64EBA0007AB60 /* ReportUseCase.swift */; };
+		912B73D829B64EC60007AB60 /* ReportUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912B73D729B64EC60007AB60 /* ReportUseCaseImpl.swift */; };
+		912B73DB29B64EE50007AB60 /* ReportsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912B73DA29B64EE50007AB60 /* ReportsRepository.swift */; };
+		912B73DD29B64EF40007AB60 /* ReportsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912B73DC29B64EF40007AB60 /* ReportsRepositoryImpl.swift */; };
+		912B73DF29B64F320007AB60 /* ReportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912B73DE29B64F320007AB60 /* ReportsViewModel.swift */; };
+		912B73E729B668200007AB60 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 912B73E629B668200007AB60 /* FirebaseAuth */; };
+		91B6D3D929B2B0D700DF351C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D3D829B2B0D700DF351C /* AppDelegate.swift */; };
+		91B6D3DB29B2B0D700DF351C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D3DA29B2B0D700DF351C /* SceneDelegate.swift */; };
+		91B6D3E229B2B0DA00DF351C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D3E129B2B0DA00DF351C /* Assets.xcassets */; };
+		91B6D3E529B2B0DA00DF351C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D3E329B2B0DA00DF351C /* LaunchScreen.storyboard */; };
+		91B6D3F029B2B0DB00DF351C /* ReportesNativAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D3EF29B2B0DB00DF351C /* ReportesNativAppsTests.swift */; };
+		91B6D3FA29B2B0DB00DF351C /* ReportesNativAppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D3F929B2B0DB00DF351C /* ReportesNativAppsUITests.swift */; };
+		91B6D3FC29B2B0DB00DF351C /* ReportesNativAppsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D3FB29B2B0DB00DF351C /* ReportesNativAppsUITestsLaunchTests.swift */; };
+		91B6D40F29B2B3C700DF351C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 91B6D40E29B2B3C700DF351C /* FirebaseAuth */; };
+		91B6D41329B3999C00DF351C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D41229B3999C00DF351C /* Home.storyboard */; };
+		91B6D41729B39A2800DF351C /* Reports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D41629B39A2800DF351C /* Reports.storyboard */; };
+		91B6D41A29B39A6500DF351C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D41929B39A6500DF351C /* Profile.storyboard */; };
+		91B6D41D29B3A2E300DF351C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D41C29B3A2E300DF351C /* Login.storyboard */; };
+		91B6D42429B3A70500DF351C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D42329B3A70500DF351C /* GoogleService-Info.plist */; };
+		91B6D42629B3F04600DF351C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D42529B3F04600DF351C /* ProfileViewController.swift */; };
+		91B6D42829B3F05500DF351C /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D42729B3F05500DF351C /* ReportsViewController.swift */; };
+		91B6D42A29B3F05F00DF351C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D42929B3F05F00DF351C /* HomeViewController.swift */; };
+		91B6D42C29B3F06900DF351C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D42B29B3F06900DF351C /* LoginViewController.swift */; };
+		91B6D42F29B3F91C00DF351C /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D42E29B3F91C00DF351C /* Constans.swift */; };
+		91B6D43329B3F9F700DF351C /* ExtUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D43229B3F9F700DF351C /* ExtUiViewController.swift */; };
+		91B6D43829B4032C00DF351C /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D43729B4032C00DF351C /* RoundView.swift */; };
+		91B6D43A29B405F200DF351C /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D43929B405F200DF351C /* Controller.swift */; };
+		91B6D43D29B4098200DF351C /* CreateReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D43C29B4098200DF351C /* CreateReport.storyboard */; };
+		91B6D43F29B40B6B00DF351C /* CreateReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D43E29B40B6B00DF351C /* CreateReportViewController.swift */; };
+		91B6D44329B4F4D000DF351C /* ReportViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D44129B4F4D000DF351C /* ReportViewCell.swift */; };
+		91B6D44429B4F4D000DF351C /* ReportViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B6D44229B4F4D000DF351C /* ReportViewCell.xib */; };
+		91B6D44829B4F57800DF351C /* ReportModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D44629B4F57800DF351C /* ReportModel.xcdatamodeld */; };
+		91B6D44A29B4F6D600DF351C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D44929B4F6D600DF351C /* CoreDataStack.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91B6D3EC29B2B0DB00DF351C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B6D3CD29B2B0D700DF351C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91B6D3D429B2B0D700DF351C;
+			remoteInfo = ReportesNativApps;
+		};
+		91B6D3F629B2B0DB00DF351C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91B6D3CD29B2B0D700DF351C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91B6D3D429B2B0D700DF351C;
+			remoteInfo = ReportesNativApps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		912B73D229B64E1A0007AB60 /* ReportsViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewModelDelegate.swift; sourceTree = "<group>"; };
+		912B73D529B64EBA0007AB60 /* ReportUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportUseCase.swift; sourceTree = "<group>"; };
+		912B73D729B64EC60007AB60 /* ReportUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportUseCaseImpl.swift; sourceTree = "<group>"; };
+		912B73DA29B64EE50007AB60 /* ReportsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsRepository.swift; sourceTree = "<group>"; };
+		912B73DC29B64EF40007AB60 /* ReportsRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsRepositoryImpl.swift; sourceTree = "<group>"; };
+		912B73DE29B64F320007AB60 /* ReportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewModel.swift; sourceTree = "<group>"; };
+		91B6D3D529B2B0D700DF351C /* ReportesNativApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportesNativApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B6D3D829B2B0D700DF351C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91B6D3DA29B2B0D700DF351C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		91B6D3E129B2B0DA00DF351C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91B6D3E429B2B0DA00DF351C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91B6D3E629B2B0DA00DF351C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B6D3EB29B2B0DB00DF351C /* ReportesNativAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReportesNativAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B6D3EF29B2B0DB00DF351C /* ReportesNativAppsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportesNativAppsTests.swift; sourceTree = "<group>"; };
+		91B6D3F529B2B0DB00DF351C /* ReportesNativAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReportesNativAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B6D3F929B2B0DB00DF351C /* ReportesNativAppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportesNativAppsUITests.swift; sourceTree = "<group>"; };
+		91B6D3FB29B2B0DB00DF351C /* ReportesNativAppsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportesNativAppsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91B6D41229B3999C00DF351C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		91B6D41629B39A2800DF351C /* Reports.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reports.storyboard; sourceTree = "<group>"; };
+		91B6D41929B39A6500DF351C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		91B6D41C29B3A2E300DF351C /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		91B6D41E29B3A52C00DF351C /* ReportesNativApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReportesNativApps.entitlements; sourceTree = "<group>"; };
+		91B6D42329B3A70500DF351C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91B6D42529B3F04600DF351C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		91B6D42729B3F05500DF351C /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		91B6D42929B3F05F00DF351C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		91B6D42B29B3F06900DF351C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		91B6D42E29B3F91C00DF351C /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		91B6D43229B3F9F700DF351C /* ExtUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUiViewController.swift; sourceTree = "<group>"; };
+		91B6D43729B4032C00DF351C /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		91B6D43929B405F200DF351C /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		91B6D43C29B4098200DF351C /* CreateReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateReport.storyboard; sourceTree = "<group>"; };
+		91B6D43E29B40B6B00DF351C /* CreateReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReportViewController.swift; sourceTree = "<group>"; };
+		91B6D44129B4F4D000DF351C /* ReportViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewCell.swift; sourceTree = "<group>"; };
+		91B6D44229B4F4D000DF351C /* ReportViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportViewCell.xib; sourceTree = "<group>"; };
+		91B6D44729B4F57800DF351C /* ReportModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReportModel.xcdatamodel; sourceTree = "<group>"; };
+		91B6D44929B4F6D600DF351C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91B6D3D229B2B0D700DF351C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B6D40F29B2B3C700DF351C /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B6D3E829B2B0DB00DF351C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912B73E729B668200007AB60 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B6D3F229B2B0DB00DF351C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		912B73D029B64DDA0007AB60 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				912B73D129B64DFE0007AB60 /* Protocols */,
+				912B73DE29B64F320007AB60 /* ReportsViewModel.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		912B73D129B64DFE0007AB60 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				912B73D229B64E1A0007AB60 /* ReportsViewModelDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		912B73D429B64E3C0007AB60 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				912B73D529B64EBA0007AB60 /* ReportUseCase.swift */,
+				912B73D729B64EC60007AB60 /* ReportUseCaseImpl.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		912B73D929B64ED10007AB60 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				912B73DA29B64EE50007AB60 /* ReportsRepository.swift */,
+				912B73DC29B64EF40007AB60 /* ReportsRepositoryImpl.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		912B73E529B668200007AB60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91B6D3CC29B2B0D700DF351C = {
+			isa = PBXGroup;
+			children = (
+				91B6D3D729B2B0D700DF351C /* ReportesNativApps */,
+				91B6D3EE29B2B0DB00DF351C /* ReportesNativAppsTests */,
+				91B6D3F829B2B0DB00DF351C /* ReportesNativAppsUITests */,
+				91B6D3D629B2B0D700DF351C /* Products */,
+				912B73E529B668200007AB60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91B6D3D629B2B0D700DF351C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D3D529B2B0D700DF351C /* ReportesNativApps.app */,
+				91B6D3EB29B2B0DB00DF351C /* ReportesNativAppsTests.xctest */,
+				91B6D3F529B2B0DB00DF351C /* ReportesNativAppsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91B6D3D729B2B0D700DF351C /* ReportesNativApps */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D3E629B2B0DA00DF351C /* Info.plist */,
+				91B6D44529B4F56800DF351C /* Database */,
+				91B6D43429B4031300DF351C /* CustomUI */,
+				91B6D42D29B3F90A00DF351C /* Utils */,
+				91B6D40C29B2B18100DF351C /* Base */,
+				91B6D40B29B2B14000DF351C /* Use Cases */,
+				91B6D40A29B2B13A00DF351C /* ViewModels */,
+				91B6D40929B2B13300DF351C /* Repository */,
+				91B6D40829B2B12C00DF351C /* Views */,
+			);
+			path = ReportesNativApps;
+			sourceTree = "<group>";
+		};
+		91B6D3EE29B2B0DB00DF351C /* ReportesNativAppsTests */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D3EF29B2B0DB00DF351C /* ReportesNativAppsTests.swift */,
+			);
+			path = ReportesNativAppsTests;
+			sourceTree = "<group>";
+		};
+		91B6D3F829B2B0DB00DF351C /* ReportesNativAppsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D3F929B2B0DB00DF351C /* ReportesNativAppsUITests.swift */,
+				91B6D3FB29B2B0DB00DF351C /* ReportesNativAppsUITestsLaunchTests.swift */,
+			);
+			path = ReportesNativAppsUITests;
+			sourceTree = "<group>";
+		};
+		91B6D40829B2B12C00DF351C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D43B29B4097700DF351C /* CreateReport */,
+				91B6D41529B39A1900DF351C /* Profile */,
+				91B6D41429B399FD00DF351C /* Reports */,
+				91B6D41129B3998800DF351C /* Home */,
+				91B6D41029B3997E00DF351C /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91B6D40929B2B13300DF351C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				912B73D929B64ED10007AB60 /* Reports */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		91B6D40A29B2B13A00DF351C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				912B73D029B64DDA0007AB60 /* Reports */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		91B6D40B29B2B14000DF351C /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				912B73D429B64E3C0007AB60 /* Reports */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		91B6D40C29B2B18100DF351C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D3E129B2B0DA00DF351C /* Assets.xcassets */,
+				91B6D42329B3A70500DF351C /* GoogleService-Info.plist */,
+				91B6D41E29B3A52C00DF351C /* ReportesNativApps.entitlements */,
+				91B6D3DA29B2B0D700DF351C /* SceneDelegate.swift */,
+				91B6D3D829B2B0D700DF351C /* AppDelegate.swift */,
+				91B6D3E329B2B0DA00DF351C /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		91B6D41029B3997E00DF351C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D41C29B3A2E300DF351C /* Login.storyboard */,
+				91B6D42B29B3F06900DF351C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		91B6D41129B3998800DF351C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D41229B3999C00DF351C /* Home.storyboard */,
+				91B6D42929B3F05F00DF351C /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		91B6D41429B399FD00DF351C /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D44029B4F4AB00DF351C /* Cells */,
+				91B6D41629B39A2800DF351C /* Reports.storyboard */,
+				91B6D42729B3F05500DF351C /* ReportsViewController.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		91B6D41529B39A1900DF351C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D41929B39A6500DF351C /* Profile.storyboard */,
+				91B6D42529B3F04600DF351C /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		91B6D42D29B3F90A00DF351C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D42E29B3F91C00DF351C /* Constans.swift */,
+				91B6D43229B3F9F700DF351C /* ExtUiViewController.swift */,
+				91B6D43929B405F200DF351C /* Controller.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		91B6D43429B4031300DF351C /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D43529B4031900DF351C /* Views */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		91B6D43529B4031900DF351C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D43729B4032C00DF351C /* RoundView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91B6D43B29B4097700DF351C /* CreateReport */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D43C29B4098200DF351C /* CreateReport.storyboard */,
+				91B6D43E29B40B6B00DF351C /* CreateReportViewController.swift */,
+			);
+			path = CreateReport;
+			sourceTree = "<group>";
+		};
+		91B6D44029B4F4AB00DF351C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D44129B4F4D000DF351C /* ReportViewCell.swift */,
+				91B6D44229B4F4D000DF351C /* ReportViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		91B6D44529B4F56800DF351C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D44629B4F57800DF351C /* ReportModel.xcdatamodeld */,
+				91B6D44929B4F6D600DF351C /* CoreDataStack.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91B6D3D429B2B0D700DF351C /* ReportesNativApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B6D3FF29B2B0DB00DF351C /* Build configuration list for PBXNativeTarget "ReportesNativApps" */;
+			buildPhases = (
+				91B6D3D129B2B0D700DF351C /* Sources */,
+				91B6D3D229B2B0D700DF351C /* Frameworks */,
+				91B6D3D329B2B0D700DF351C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReportesNativApps;
+			packageProductDependencies = (
+				91B6D40E29B2B3C700DF351C /* FirebaseAuth */,
+			);
+			productName = ReportesNativApps;
+			productReference = 91B6D3D529B2B0D700DF351C /* ReportesNativApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91B6D3EA29B2B0DB00DF351C /* ReportesNativAppsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B6D40229B2B0DB00DF351C /* Build configuration list for PBXNativeTarget "ReportesNativAppsTests" */;
+			buildPhases = (
+				91B6D3E729B2B0DB00DF351C /* Sources */,
+				91B6D3E829B2B0DB00DF351C /* Frameworks */,
+				91B6D3E929B2B0DB00DF351C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91B6D3ED29B2B0DB00DF351C /* PBXTargetDependency */,
+			);
+			name = ReportesNativAppsTests;
+			packageProductDependencies = (
+				912B73E629B668200007AB60 /* FirebaseAuth */,
+			);
+			productName = ReportesNativAppsTests;
+			productReference = 91B6D3EB29B2B0DB00DF351C /* ReportesNativAppsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91B6D3F429B2B0DB00DF351C /* ReportesNativAppsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B6D40529B2B0DB00DF351C /* Build configuration list for PBXNativeTarget "ReportesNativAppsUITests" */;
+			buildPhases = (
+				91B6D3F129B2B0DB00DF351C /* Sources */,
+				91B6D3F229B2B0DB00DF351C /* Frameworks */,
+				91B6D3F329B2B0DB00DF351C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91B6D3F729B2B0DB00DF351C /* PBXTargetDependency */,
+			);
+			name = ReportesNativAppsUITests;
+			productName = ReportesNativAppsUITests;
+			productReference = 91B6D3F529B2B0DB00DF351C /* ReportesNativAppsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B6D3CD29B2B0D700DF351C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					91B6D3D429B2B0D700DF351C = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					91B6D3EA29B2B0DB00DF351C = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 91B6D3D429B2B0D700DF351C;
+					};
+					91B6D3F429B2B0DB00DF351C = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 91B6D3D429B2B0D700DF351C;
+					};
+				};
+			};
+			buildConfigurationList = 91B6D3D029B2B0D700DF351C /* Build configuration list for PBXProject "ReportesNativApps" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91B6D3CC29B2B0D700DF351C;
+			packageReferences = (
+				91B6D40D29B2B3C600DF351C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 91B6D3D629B2B0D700DF351C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91B6D3D429B2B0D700DF351C /* ReportesNativApps */,
+				91B6D3EA29B2B0DB00DF351C /* ReportesNativAppsTests */,
+				91B6D3F429B2B0DB00DF351C /* ReportesNativAppsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91B6D3D329B2B0D700DF351C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B6D41A29B39A6500DF351C /* Profile.storyboard in Resources */,
+				91B6D3E529B2B0DA00DF351C /* LaunchScreen.storyboard in Resources */,
+				91B6D41D29B3A2E300DF351C /* Login.storyboard in Resources */,
+				91B6D3E229B2B0DA00DF351C /* Assets.xcassets in Resources */,
+				91B6D41329B3999C00DF351C /* Home.storyboard in Resources */,
+				91B6D44429B4F4D000DF351C /* ReportViewCell.xib in Resources */,
+				91B6D41729B39A2800DF351C /* Reports.storyboard in Resources */,
+				91B6D43D29B4098200DF351C /* CreateReport.storyboard in Resources */,
+				91B6D42429B3A70500DF351C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B6D3E929B2B0DB00DF351C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B6D3F329B2B0DB00DF351C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91B6D3D129B2B0D700DF351C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B6D44A29B4F6D600DF351C /* CoreDataStack.swift in Sources */,
+				91B6D43F29B40B6B00DF351C /* CreateReportViewController.swift in Sources */,
+				91B6D43329B3F9F700DF351C /* ExtUiViewController.swift in Sources */,
+				912B73DF29B64F320007AB60 /* ReportsViewModel.swift in Sources */,
+				912B73DD29B64EF40007AB60 /* ReportsRepositoryImpl.swift in Sources */,
+				91B6D42C29B3F06900DF351C /* LoginViewController.swift in Sources */,
+				91B6D43A29B405F200DF351C /* Controller.swift in Sources */,
+				91B6D42A29B3F05F00DF351C /* HomeViewController.swift in Sources */,
+				912B73D329B64E1A0007AB60 /* ReportsViewModelDelegate.swift in Sources */,
+				912B73DB29B64EE50007AB60 /* ReportsRepository.swift in Sources */,
+				91B6D42829B3F05500DF351C /* ReportsViewController.swift in Sources */,
+				91B6D42629B3F04600DF351C /* ProfileViewController.swift in Sources */,
+				91B6D3D929B2B0D700DF351C /* AppDelegate.swift in Sources */,
+				91B6D44829B4F57800DF351C /* ReportModel.xcdatamodeld in Sources */,
+				912B73D629B64EBA0007AB60 /* ReportUseCase.swift in Sources */,
+				91B6D42F29B3F91C00DF351C /* Constans.swift in Sources */,
+				91B6D44329B4F4D000DF351C /* ReportViewCell.swift in Sources */,
+				912B73D829B64EC60007AB60 /* ReportUseCaseImpl.swift in Sources */,
+				91B6D3DB29B2B0D700DF351C /* SceneDelegate.swift in Sources */,
+				91B6D43829B4032C00DF351C /* RoundView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B6D3E729B2B0DB00DF351C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B6D3F029B2B0DB00DF351C /* ReportesNativAppsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91B6D3F129B2B0DB00DF351C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B6D3FA29B2B0DB00DF351C /* ReportesNativAppsUITests.swift in Sources */,
+				91B6D3FC29B2B0DB00DF351C /* ReportesNativAppsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91B6D3ED29B2B0DB00DF351C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91B6D3D429B2B0D700DF351C /* ReportesNativApps */;
+			targetProxy = 91B6D3EC29B2B0DB00DF351C /* PBXContainerItemProxy */;
+		};
+		91B6D3F729B2B0DB00DF351C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91B6D3D429B2B0D700DF351C /* ReportesNativApps */;
+			targetProxy = 91B6D3F629B2B0DB00DF351C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91B6D3E329B2B0DA00DF351C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91B6D3E429B2B0DA00DF351C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91B6D3FD29B2B0DB00DF351C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91B6D3FE29B2B0DB00DF351C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91B6D40029B2B0DB00DF351C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCKGB87P83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportesNativApps/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Añadir reportes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Login.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = valeria.ReportesNativApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		91B6D40129B2B0DB00DF351C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCKGB87P83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportesNativApps/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Añadir reportes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Login.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = valeria.ReportesNativApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		91B6D40329B2B0DB00DF351C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCKGB87P83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = valeria.ReportesNativAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReportesNativApps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReportesNativApps";
+			};
+			name = Debug;
+		};
+		91B6D40429B2B0DB00DF351C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCKGB87P83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = valeria.ReportesNativAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReportesNativApps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReportesNativApps";
+			};
+			name = Release;
+		};
+		91B6D40629B2B0DB00DF351C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCKGB87P83;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = valeria.ReportesNativAppsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReportesNativApps;
+			};
+			name = Debug;
+		};
+		91B6D40729B2B0DB00DF351C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCKGB87P83;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = valeria.ReportesNativAppsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReportesNativApps;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91B6D3D029B2B0D700DF351C /* Build configuration list for PBXProject "ReportesNativApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B6D3FD29B2B0DB00DF351C /* Debug */,
+				91B6D3FE29B2B0DB00DF351C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B6D3FF29B2B0DB00DF351C /* Build configuration list for PBXNativeTarget "ReportesNativApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B6D40029B2B0DB00DF351C /* Debug */,
+				91B6D40129B2B0DB00DF351C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B6D40229B2B0DB00DF351C /* Build configuration list for PBXNativeTarget "ReportesNativAppsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B6D40329B2B0DB00DF351C /* Debug */,
+				91B6D40429B2B0DB00DF351C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B6D40529B2B0DB00DF351C /* Build configuration list for PBXNativeTarget "ReportesNativAppsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B6D40629B2B0DB00DF351C /* Debug */,
+				91B6D40729B2B0DB00DF351C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91B6D40D29B2B3C600DF351C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		912B73E629B668200007AB60 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91B6D40D29B2B3C600DF351C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		91B6D40E29B2B3C700DF351C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91B6D40D29B2B3C600DF351C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		91B6D44629B4F57800DF351C /* ReportModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				91B6D44729B4F57800DF351C /* ReportModel.xcdatamodel */,
+			);
+			currentVersion = 91B6D44729B4F57800DF351C /* ReportModel.xcdatamodel */;
+			path = ReportModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 91B6D3CD29B2B0D700DF351C /* Project object */;
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="loginView" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="ReportesNativApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="qxQ-Xu-JUv">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5M-Er-uhX" customClass="RoundView" customModule="ReportesNativApps" customModuleProvider="target">
+                                <rect key="frame" x="39" y="332" width="312" height="180.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ty8-gq-ywD">
+                                        <rect key="frame" x="10" y="10" width="292" height="160.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa con tu número de celular" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m74-Gm-fRb">
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="20.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MaO-0V-3p7">
+                                                <rect key="frame" x="0.0" y="30.666666666666686" width="292" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lo verificaremos con un mensaje de texto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve0-fs-6WS">
+                                                <rect key="frame" x="0.0" y="74.666666666666686" width="292" height="41.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZZ-sA-D6c">
+                                                <rect key="frame" x="0.0" y="125.99999999999999" width="292" height="34.333333333333329"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Continuar"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ty8-gq-ywD" firstAttribute="leading" secondItem="x5M-Er-uhX" secondAttribute="leading" constant="10" id="2GG-Y0-huQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ty8-gq-ywD" secondAttribute="trailing" constant="10" id="44R-sy-KbO"/>
+                                    <constraint firstAttribute="bottom" secondItem="ty8-gq-ywD" secondAttribute="bottom" constant="10" id="upR-dz-Wct"/>
+                                    <constraint firstItem="ty8-gq-ywD" firstAttribute="top" secondItem="x5M-Er-uhX" secondAttribute="top" constant="10" id="xqj-lJ-rxV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46M-EL-YTS" customClass="RoundView" customModule="ReportesNativApps" customModuleProvider="target">
+                                <rect key="frame" x="39" y="347.33333333333331" width="312" height="149.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NOl-Fr-ugh">
+                                        <rect key="frame" x="10" y="10" width="292" height="129.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa el código enviado a tu teléfono" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8R7-0b-jyL">
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="41.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Código" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciX-aM-l9y">
+                                                <rect key="frame" x="0.0" y="51.333333333333371" width="292" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="taa-Mq-WLR">
+                                                <rect key="frame" x="0.0" y="95.333333333333371" width="292" height="34.333333333333343"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcB-p4-35X">
+                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Atrás"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-hS-Sis">
+                                                        <rect key="frame" x="156" y="0.0" width="136" height="34.333333333333336"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Verificar"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NOl-Fr-ugh" secondAttribute="bottom" constant="10" id="TcH-vd-6E2"/>
+                                    <constraint firstItem="NOl-Fr-ugh" firstAttribute="top" secondItem="46M-EL-YTS" secondAttribute="top" constant="10" id="VYL-yZ-Mu0"/>
+                                    <constraint firstAttribute="trailing" secondItem="NOl-Fr-ugh" secondAttribute="trailing" constant="10" id="XIl-Rc-1H9"/>
+                                    <constraint firstItem="NOl-Fr-ugh" firstAttribute="leading" secondItem="46M-EL-YTS" secondAttribute="leading" constant="10" id="YEy-a6-qP4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bienvenido!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOA-l4-fpX">
+                                <rect key="frame" x="116.33333333333333" y="67" width="157.33333333333337" height="30.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qxQ-Xu-JUv" secondAttribute="bottom" id="3f8-Xp-vQr"/>
+                            <constraint firstItem="x5M-Er-uhX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5ZO-ma-3Zg"/>
+                            <constraint firstItem="x5M-Er-uhX" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Cqk-7K-gme"/>
+                            <constraint firstItem="qxQ-Xu-JUv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Cud-5l-Syi"/>
+                            <constraint firstItem="46M-EL-YTS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JdY-mT-aDC"/>
+                            <constraint firstItem="46M-EL-YTS" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="MCW-FN-zTu"/>
+                            <constraint firstItem="qxQ-Xu-JUv" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Y1b-Ui-G2E"/>
+                            <constraint firstItem="LOA-l4-fpX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bxy-Lo-vgJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qxQ-Xu-JUv" secondAttribute="trailing" id="oca-0B-iTf"/>
+                            <constraint firstItem="x5M-Er-uhX" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="pra-72-Vx6"/>
+                            <constraint firstItem="46M-EL-YTS" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ptV-MP-1Id"/>
+                            <constraint firstItem="LOA-l4-fpX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="uve-3f-KLS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="VQc-6y-2dZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnBack" destination="UcB-p4-35X" id="S58-mj-lmt"/>
+                        <outlet property="btnContinue" destination="zZZ-sA-D6c" id="PJ3-aT-ISe"/>
+                        <outlet property="btnVerify" destination="dqD-hS-Sis" id="mzd-ga-VTo"/>
+                        <outlet property="tfCode" destination="ciX-aM-l9y" id="kP0-Ae-I76"/>
+                        <outlet property="tfPhone" destination="MaO-0V-3p7" id="btt-qd-Dpp"/>
+                        <outlet property="viewPhone" destination="x5M-Er-uhX" id="ZIV-8X-16K"/>
+                        <outlet property="viewVerify" destination="46M-EL-YTS" id="qF4-Sa-SIO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.692307692307693" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="5184" height="3456"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

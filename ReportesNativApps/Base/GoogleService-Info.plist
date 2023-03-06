@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1056751719798-uu1f2ns6jdtf3v9dvig444tppsoqp6cm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1056751719798-uu1f2ns6jdtf3v9dvig444tppsoqp6cm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBRh3e7jRGPgFy2TtGNZjDTcA9eCk3PuSk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1056751719798</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>valeria.ReportesNativApps</string>
+	<key>PROJECT_ID</key>
+	<string>reportes-d5e5b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>reportes-d5e5b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1056751719798:ios:3267e4d06cbf4113f01657</string>
+</dict>
+</plist>
